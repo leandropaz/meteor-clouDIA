@@ -1,31 +1,20 @@
-<head>
-  <title>Formulario de Cadastro</title>
-</head>
-
-<body>
+<!--<body>
     {{#if currentUser}}
       {{> dashboard}}
     {{else}}
       {{> register}}
       {{> login}}
     {{/if}}
-</body>
+</body> -->
 
 <template name="register">
   <form>
-    <input type="text" id="email">
-    <input type="password" id="password">
-    <input type="submit" value="Registrar">
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <input type="submit" value="Cadastrar">
   </form>
 </template>
 
-<template name="login">
-  <form>
-    <input type="text" id="login-email">
-    <input type="password" id="login-password">
-    <input type="submit" value="Logar">
-  </form>
-</template>
 
 <template name="dashboard">
   <p>Você está logado</p>

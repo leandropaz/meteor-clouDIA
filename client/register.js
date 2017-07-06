@@ -2,22 +2,17 @@ if(Meteor.isClient){
   Template.register.events({
     'submit form': function(event, template){
       event.preventDefault();
-      var emailVar = template.find('#email').value;
-      var passwordVar = template.find('#password').value;
+    //  var emailVar = template.find('#email').value;
+      var emailVar = $('[name=email]').val();
+      var passwordVar = $('[name=password]').val();
       Accounts.createUser({     //função fornecida palo pacote accounts-password
         email: emailVar,
         password: passwordVar
       });
+      Router.go('home');
     }
   });
-  Template.login.events({
-    'submit form': function(event, template){
-      event.preventDefault();
-      var emailVar = template.find('#login-email').value;
-      var passwordVar = template.find('#login-password').value;
-      Meteor.loginWithPassword(emailVar, passwordVar);
-    }
-  });
+
   Template.dashboard.events({
     'click .logout': function(event){
       event.preventDefault();    //evita o default action. Clique no link só fará oq for explicitamente programado
@@ -25,3 +20,5 @@ if(Meteor.isClient){
     }
   });
 }
+
+Router.route('/register');
