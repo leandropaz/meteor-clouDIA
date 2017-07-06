@@ -1,0 +1,212 @@
+<!--   <body>
+{{>home}}    -->
+<template name="home">
+  <a href="{{pathFor route='home'}}">Home</a>
+
+  <p>Bem vindo ao clouDIA</p>
+        <header>
+    <nav class="navbar navbar-default navbar-fixed-top navigbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Mostrar navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">
+              <!--      <img class="cloudia-logo" src="assets/cloudia-logo-3.png" </img> -->
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/login">Entrar</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+            <section class="about container-fluid">
+                <div class="row">
+                    <h2 class="green-header col-md-12">Mais sobre ClouDIA</h2>
+                </div>
+                <div class="row">
+                    <h4 class="col-md-12 blue-header"><p>ClouDIA é um projeto com as preocupações ambientais e sociais.</p> </h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="media-left iconabout">
+                                <img class="media-object cloudiaicon" src="assets/logo1.png" alt="Environment logo"/>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Ambiente</h3>
+                                <p>
+                                    O principal objetivo do projeto é reunir dados de projetos em todo o mundo em uma variedade de campos científicos, a fim de um dia talvez estabelecer relações e melhorar o nosso mundo !
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="media-left iconabout">
+                                <img class="media-object cloudiaicon" src="assets/logo2.png" alt="Cloud logo"/>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Nuvem</h3>
+                                <p>
+                                    Ao oferecer acesso fácil e vizualisation de dados, é nossa esperança que os cientistas de todo o mundo vão ver as suas tarefas diminuiu e que as pessoas vão perceber exatamente o que está errado eo que é bom com o seu environnement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="media-left iconabout">
+                                <img class="media-object cloudiaicon" src="assets/logo3.png" alt="World logo"/>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Internacional</h3>
+                                <p>
+                                    Uma vez que todos podem acessar dados para os projectos que lhes sejam próximas, esperamos para ver grupos de formação e unir forças para melhorar a qualidade de suas vidas, bem como as suas comunidades.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="media-left iconabout">
+                                <img class="media-object cloudiaicon" src="assets/logo4.png" alt="Sensor logo"/>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Sensores</h3>
+                                <p>
+                                    Sensores estão no centro de ClouDIA, que visa recolher dados e torná-lo socialmente útil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section sur les sponsors-->
+                <section class="sponsors container-fluid">
+
+                    <div class="row">
+                        <h2 class="col-md-12 text-center">Um agradecimento especial a nossos patrocinadores</h2>
+                    </div>
+                    <!--
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 text-center">
+                        <a class="thumbnail" href="http://www.souduredelestrie.com">
+                            <img class="logo" title="Soudure de l'Estrie" src="assets/sponsors/soudure_estrie.jpg"/>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                        <a class="thumbnail" href="http://www.jolyriendeau.com">
+                            <img class="logo" title="Joly Riendeau et Duke" src="assets/sponsors/joly_riendeau.jpg"/>
+                        </a>
+            		</div>-->
+
+                    <div class="col-xs-5 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <a class="thumbnail" href="http://www.restaurantjacko.ca/fr/freddy-pizzeria.htm">
+                            <img class="logo" title="Freddy Pizzeria" src="file:///Users/simduf15/Desktop/Brésil/HTML%20CSS%20ClouDIA/assets/sponsors/freddy.png"/>
+                        </a>
+                    </div>
+
+                    <div class="hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <a class="thumbnail" href="http://www.superc.ca/fr/index.html">
+                            <img class="logo" title="Super C" src="assets/sponsors/super_c.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-offset-1 col-sm-offset-0 col-xs-5 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <a class="thumbnail" href="http://www.classcraft.com">
+                            <img class="logo" title="ClassCraft" src="file:///Users/simduf15/Desktop/Brésil/HTML%20CSS%20ClouDIA/assets/sponsors/class_craft.png"/>
+                        </a>
+                    </div>
+
+                    <div class="visible-xs col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <a class="thumbnail" href="http://www.superc.ca/fr/index.html">
+                            <img class="logo" title="Super C" src="file:///Users/simduf15/Desktop/Brésil/HTML%20CSS%20ClouDIA/assets/sponsors/super_c.png"/>
+                        </a>
+                    </div>
+
+                    <!--
+                    <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 text-center">
+                        <a class="thumbnail" href="http://pierrelucdusseault.npd.ca">
+                            <img class="logo" title="Pierre-Luc Dusseault" src="assets/sponsors/depute.jpg"/>
+                        </a>
+                    </div>-->
+
+                </section>
+            <!-- Le pied de page à remplacer-->
+            <footer>
+    <nav class="navbar navbar-default navbar-fixed-bottom navigbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+          <!--  <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <p class="navbar-text">© Cloudia 2016</p>
+                </div> -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/projetcloudia">
+                                <img id="facebook-icon" src="assets/facebook.ico">
+                            </a>
+                        </li>
+                        <li><a href="home.html">Sobre</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="https://www.facebook.com/projetcloudia">Contato</a></li>
+                        <!-- select a language -->
+                        <li class="dropup">
+                            <a href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                Idioma
+                            <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation">
+                                    <a class="myformlink" id="English" data-formname="en" role="menuitem" tabindex="-1" href="#">English</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="myformlink" id="French" data-formname="fr" role="menuitem" tabindex="-1" href="#">Francais</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="myformlink" id="Portuguais" data-formname="pt" role="menuitem" tabindex="-1" href="#">Português</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+    </nav>
+</footer>
+
+<!--    </body> -->
+
+
+</template>
+
+<template name="main">
+    <h1>clouDIA</h1>
+    {{> navigation}}
+    {{> yield}}     <!-- mostra o conteudo de cada router no seu devido lugar (home, login, register)  -->
+    <hr />
+    <p>Copyright &copy; clouDIA, 2016-2017.</p>
+</template>
+
+<template name="navigation">
+    <ul>
+        <li><a href="{{pathFor route='home'}}">Home</a></li>
+        <li><a href="{{pathFor route='register'}}">Cadastro</a></li>
+        <li><a href="{{pathFor route='login'}}">Login</a></li>
+    </ul>
+</template>
